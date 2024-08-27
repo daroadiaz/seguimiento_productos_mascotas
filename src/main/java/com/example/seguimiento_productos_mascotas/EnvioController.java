@@ -36,9 +36,4 @@ public class EnvioController {
         return envio != null ? envio.getUbicacionActual() : null;
     }
 
-    @PostMapping
-    public Envio crearEnvio(@RequestBody Envio envio) {
-        envios.add(envio);
-        return envio;
-    }
 }
