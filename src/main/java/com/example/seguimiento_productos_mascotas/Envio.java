@@ -19,28 +19,28 @@ public class Envio {
         return idEnvio;
     }
 
-    public void setIdEnvio(String idEnvio) {
-        this.idEnvio = idEnvio;
-    }
-
     public String getProducto() {
         return producto;
-    }
-
-    public void setProducto(String producto) {
-        this.producto = producto;
     }
 
     public Date getFechaEnvio() {
         return fechaEnvio;
     }
 
-    public void setFechaEnvio(Date fechaEnvio) {
-        this.fechaEnvio = fechaEnvio;
-    }
-
     public Ubicacion getUbicacionActual() {
         return ubicacionActual;
+    }
+
+    public void setIdEnvio(String idEnvio) {
+        this.idEnvio = idEnvio;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+    public void setFechaEnvio(Date fechaEnvio) {
+        this.fechaEnvio = fechaEnvio;
     }
 
     public void setUbicacionActual(Ubicacion ubicacionActual) {

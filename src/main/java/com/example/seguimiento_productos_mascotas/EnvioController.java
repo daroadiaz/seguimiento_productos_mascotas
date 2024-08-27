@@ -13,8 +13,10 @@ public class EnvioController {
     private List<Envio> envios = new ArrayList<>();
 
     public EnvioController() {
-        envios.add(new Envio("ENV123", "Alimento para perros", new Date(), new Ubicacion("Santiago", "Calle 123")));
-        envios.add(new Envio("ENV124", "Juguete para gatos", new Date(), new Ubicacion("Valparaíso", "Calle 456")));
+        envios.add(new Envio("1", "Alimento de perros",
+                new Date(), new Ubicacion("Santiago", "Calle nonguen")));
+        envios.add(new Envio("2", "Juguete de gatos",
+                new Date(), new Ubicacion("Valparaíso", "Calle centauro")));
     }
 
     @GetMapping

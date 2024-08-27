@@ -13,12 +13,12 @@ public class Ubicacion {
         return ciudad;
     }
 
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
-
     public String getDireccion() {
         return direccion;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
     public void setDireccion(String direccion) {
