@@ -24,6 +24,11 @@ public class EnvioController {
         return envios;
     }
 
+    @GetMapping
+    public List<Envio> getEnviosByProducto(@RequestParam String producto) {
+        return envios.stream().filter(envio -> envio.getProducto().equals(producto)).toList();
+    }
+
     @GetMapping("/{idEnvio}")
     public Envio getEnvioById(@PathVariable String idEnvio) {
         return envios.stream().filter(envio -> envio.getIdEnvio().equals(idEnvio)).findFirst().orElse(null);
