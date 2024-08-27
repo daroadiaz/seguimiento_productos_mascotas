@@ -23,11 +23,7 @@ public class EnvioController {
     public List<Envio> getEnvios() {
         return envios;
     }
-
-    @GetMapping
-    public List<Envio> getEnviosByProducto(@RequestParam String producto) {
-        return envios.stream().filter(envio -> envio.getProducto().equals(producto)).toList();
-    }
+    
 
     @GetMapping("/{idEnvio}")
     public Envio getEnvioById(@PathVariable String idEnvio) {
