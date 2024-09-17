@@ -13,7 +13,6 @@ public class Producto {
     private String descripcion;
     private Double precio;
 
-    // Constructor, getters y setters
     public Producto() {}
 
     public Producto(String nombre, String descripcion, Double precio) {
@@ -22,7 +21,6 @@ public class Producto {
         this.precio = precio;
     }
 
-    // Getters y setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getNombre() { return nombre; }

@@ -12,7 +12,6 @@ public class Ubicacion {
     private String ciudad;
     private String direccion;
 
-    // Constructor, getters y setters
     public Ubicacion() {}
 
     public Ubicacion(String ciudad, String direccion) {
@@ -20,7 +19,6 @@ public class Ubicacion {
         this.direccion = direccion;
     }
 
-    // Getters y setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getCiudad() { return ciudad; }

@@ -20,7 +20,6 @@ public class Envio {
     @JoinColumn(name = "ubicacion_id")
     private Ubicacion ubicacionActual;
 
-    // Constructor, getters y setters
     public Envio() {}
 
     public Envio(Producto producto, Date fechaEnvio, Ubicacion ubicacionActual) {
@@ -29,7 +28,6 @@ public class Envio {
         this.ubicacionActual = ubicacionActual;
     }
 
-    // Getters y setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public Producto getProducto() { return producto; }
